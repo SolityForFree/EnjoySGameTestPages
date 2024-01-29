@@ -177,7 +177,18 @@
             display: none;
             top: 25%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, 	-50%);
+            padding: 20px;
+			width: 100%;
+            /* background-color: #fff; */
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+	
+		#loadWarning {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, 	-50%);
             padding: 20px;
 			width: 100%;
             /* background-color: #fff; */
@@ -220,6 +231,10 @@
     <button id="acceptBtn" class="btn btn-primary">Accept</button>
 </div>
 
+<div id="loadWarning" class="text-light display-1">
+	<h2>Nahrávání aplikace po prvním připojení zabere více času.</h2>
+</div>
+
 
 	<div id='status'>
 		<div id='status-progress' style='display: none;' oncontextmenu='event.preventDefault();'><div id ='status-progress-inner'></div></div>
@@ -239,7 +254,7 @@
 	<script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":2336464,"index.wasm":17867504},"focusCanvas":true,"gdnativeLibs":[],"serviceWorker":"index.service.worker.js"};
+		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":2366784,"index.wasm":17867504},"focusCanvas":true,"gdnativeLibs":[],"serviceWorker":"index.service.worker.js"};
 		var engine = new Engine(GODOT_CONFIG);
 
 		(function() {
