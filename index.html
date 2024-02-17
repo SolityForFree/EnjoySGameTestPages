@@ -252,7 +252,7 @@
 	<script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":2339776,"index.wasm":17867504},"focusCanvas":true,"gdnativeLibs":[],"serviceWorker":"index.service.worker.js"};
+		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":2203120,"index.wasm":17867504},"focusCanvas":true,"gdnativeLibs":[],"serviceWorker":"index.service.worker.js"};
 		var engine = new Engine(GODOT_CONFIG);
 
 		(function() {
@@ -407,6 +407,19 @@
             });
         });
     }
+
+	function IsFirstVisit(){
+        if(localStorage.getItem('was_visited')){
+            return false;
+        }
+		return true
+    }
+
+	function SetFirstVisit()
+	{
+        localStorage.setItem('was_visited', 1);
+		return true;
+	}
 	
 	</script>
 </body>
